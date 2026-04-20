@@ -1,0 +1,105 @@
+/* Ensure no unwanted styles are applied */
+.social li a::before,
+.social li a::after {
+    content: none !important;
+    display: none !important;
+    background-image: none !important;
+}
+
+/* Footer Custom Styles */
+.footer-custom {
+    background-color: #333;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Social icons container */
+.social {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+/* Each social icon */
+.social li {
+    margin: 0 10px;
+}
+
+/* Social icon links */
+.social li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 26px;
+    background-color: #444; /* Default background color for other icons */
+    border: none; /* Remove any borders */
+    box-shadow: none; /* Remove any shadows */
+    appearance: none; /* Remove default appearance */
+    position: relative; /* Ensure no positioning issues */
+}
+
+/* Icon inside link */
+.social li a i {
+    color: inherit;
+    border: none; /* Remove any borders */
+    box-shadow: none; /* Remove any shadows */
+    appearance: none; /* Remove default appearance */
+    position: absolute; /* Ensure no positioning issues */
+    width: 100%; /* Ensure it takes full width */
+    height: 100%; /* Ensure it takes full height */
+    line-height: 48px; /* Center text vertically */
+}
+
+/* LinkedIn specific styles */
+.social li a.fa-linkedin-in {
+    background-color: #0077b5 !important; /* Blue background for LinkedIn */
+}
+
+/* GitHub specific styles */
+.social li a.fa-github {
+    background-color: #333 !important; /* Background color for GitHub */
+}
+
+/* Hover effect for all icons */
+.social li a:hover i {
+    color: #c0c0c0 !important; /* Silver on hover */
+    border: none !important; /* Remove any borders */
+    box-shadow: none !important; /* Remove any shadows */
+    appearance: none !important; /* Remove default appearance */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Test body style*/
+body {
+    background-color: blue; /* Test background color */
+}
